@@ -573,8 +573,7 @@
                 </svg>
                 <span class="font-display text-jacarta-700 mt-1 text-sm dark:text-white">Edit Profile</span>
               </a>
-              <a id="btn-logout"
-              href="#"
+              <a id="btn-logout" href="#"
                 class="dark:hover:bg-jacarta-600 hover:text-accent focus:text-accent hover:bg-jacarta-50 flex items-center space-x-2 rounded-xl px-5 py-2 transition-colors">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
                   class="fill-jacarta-700 h-4 w-4 transition-colors dark:fill-white">
@@ -711,7 +710,7 @@
           </div>
 
           <!-- Description -->
-          <div class="mb-6">
+          <div>
             <label for="item-description"
               class="font-display text-jacarta-700 mb-2 block dark:text-white">Description</label>
             <p class="dark:text-jacarta-300 text-2xs mb-3">
@@ -723,124 +722,7 @@
               rows="4" required placeholder="Provide a detailed description of your item."></textarea>
           </div>
 
-          <!-- Collection -->
-          <div class="relative">
-            <div>
-              <label class="font-display text-jacarta-700 mb-2 block dark:text-white">Collection</label>
-              <div class="mb-3 flex items-center space-x-2">
-                <p class="dark:text-jacarta-300 text-2xs">
-                  This is the collection where your item will appear.
-                  <span class="inline-block"
-                    data-tippy-content="Moving items to a different collection may take up to 30 minutes.">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
-                      class="dark:fill-jacarta-300 fill-jacarta-500 ml-1 -mb-[3px] h-4 w-4">
-                      <path fill="none" d="M0 0h24v24H0z"></path>
-                      <path
-                        d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16zM11 7h2v2h-2V7zm0 4h2v6h-2v-6z">
-                      </path>
-                    </svg>
-                  </span>
-                </p>
-              </div>
-            </div>
-
-            <div class="dropdown my-1 cursor-pointer">
-              <div
-                class="dark:bg-jacarta-700 dropdown-toggle border-jacarta-100 dark:border-jacarta-600 dark:text-jacarta-300 flex items-center justify-between rounded-lg border bg-white py-3 px-3"
-                role="button" id="item-collection" data-bs-toggle="dropdown" aria-expanded="false">
-                <span class="">Select collection</span>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
-                  class="fill-jacarta-500 h-4 w-4 dark:fill-white">
-                  <path fill="none" d="M0 0h24v24H0z" />
-                  <path d="M12 13.172l4.95-4.95 1.414 1.414L12 16 5.636 9.636 7.05 8.222z" />
-                </svg>
-              </div>
-
-              <div
-                class="dropdown-menu dark:bg-jacarta-800 z-10 hidden w-full whitespace-nowrap rounded-xl bg-white py-4 px-2 text-left shadow-xl"
-                aria-labelledby="item-collection">
-                <ul class="scrollbar-custom flex max-h-48 flex-col overflow-y-auto">
-                  <li>
-                    <a href="#"
-                      class="dropdown-item font-display dark:hover:bg-jacarta-600 hover:bg-jacarta-50 flex w-full items-center justify-between rounded-xl px-5 py-2 text-left text-sm transition-colors dark:text-white">
-                      <span class="flex items-center space-x-3">
-                        <img src="img/avatars/collection_ava_1.png" class="h-8 w-8 rounded-full" loading="lazy"
-                          alt="avatar" />
-                        <span class="text-jacarta-700 dark:text-white">CryptoKitties</span>
-                      </span>
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
-                        class="fill-accent mb-[3px] h-4 w-4">
-                        <path fill="none" d="M0 0h24v24H0z"></path>
-                        <path d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"></path>
-                      </svg>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#"
-                      class="dropdown-item font-display dark:hover:bg-jacarta-600 hover:bg-jacarta-50 flex w-full items-center rounded-xl px-5 py-2 text-left text-sm transition-colors dark:text-white">
-                      <span class="flex items-center space-x-3">
-                        <img src="img/avatars/collection_ava_2.jpg" class="h-8 w-8 rounded-full" loading="lazy"
-                          alt="avatar" />
-                        <span class="text-jacarta-700 dark:text-white">KaijuKings</span>
-                      </span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#"
-                      class="dropdown-item font-display dark:hover:bg-jacarta-600 hover:bg-jacarta-50 flex w-full items-center rounded-xl px-5 py-2 text-left text-sm transition-colors dark:text-white">
-                      <span class="flex items-center space-x-3">
-                        <img src="img/avatars/collection_ava_3.png" class="h-8 w-8 rounded-full" loading="lazy"
-                          alt="avatar" />
-                        <span class="text-jacarta-700 dark:text-white">Kumo x World</span>
-                      </span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#"
-                      class="dropdown-item font-display dark:hover:bg-jacarta-600 hover:bg-jacarta-50 flex w-full items-center rounded-xl px-5 py-2 text-left text-sm transition-colors dark:text-white">
-                      <span class="flex items-center space-x-3">
-                        <img src="img/avatars/collection_ava_4.jpg" class="h-8 w-8 rounded-full" loading="lazy"
-                          alt="avatar" />
-                        <span class="text-jacarta-700 dark:text-white">Irene DAO</span>
-                      </span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#"
-                      class="dropdown-item font-display dark:hover:bg-jacarta-600 hover:bg-jacarta-50 flex w-full items-center rounded-xl px-5 py-2 text-left text-sm transition-colors dark:text-white">
-                      <span class="flex items-center space-x-3">
-                        <img src="img/avatars/collection_ava_5.png" class="h-8 w-8 rounded-full" loading="lazy"
-                          alt="avatar" />
-                        <span class="text-jacarta-700 dark:text-white">GenerativeDungeon</span>
-                      </span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#"
-                      class="dropdown-item font-display dark:hover:bg-jacarta-600 hover:bg-jacarta-50 flex w-full items-center rounded-xl px-5 py-2 text-left text-sm transition-colors dark:text-white">
-                      <span class="flex items-center space-x-3">
-                        <img src="img/avatars/collection_ava_6.jpg" class="h-8 w-8 rounded-full" loading="lazy"
-                          alt="avatar" />
-                        <span class="text-jacarta-700 dark:text-white">ENS Domains</span>
-                      </span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#"
-                      class="dropdown-item font-display dark:hover:bg-jacarta-600 hover:bg-jacarta-50 flex w-full items-center rounded-xl px-5 py-2 text-left text-sm transition-colors dark:text-white">
-                      <span class="flex items-center space-x-3">
-                        <img src="img/avatars/collection_ava_7.png" class="h-8 w-8 rounded-full" loading="lazy"
-                          alt="avatar" />
-                        <span class="text-jacarta-700 dark:text-white">Cozy Penguin</span>
-                      </span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <!-- Properties -->
+          <!-- Credits -->
           <div class="dark:border-jacarta-600 border-jacarta-100 relative border-b py-6">
             <div class="flex items-center justify-between">
               <div class="flex">
@@ -852,8 +734,8 @@
                 </svg>
 
                 <div>
-                  <label class="font-display text-jacarta-700 block dark:text-white">Properties</label>
-                  <p class="dark:text-jacarta-300">Textual traits that show up as rectangles.</p>
+                  <label class="font-display text-jacarta-700 block dark:text-white">Credits</label>
+                  <p class="dark:text-jacarta-300">Appropriate Citations to other Intellectual Property</p>
                 </div>
               </div>
               <button
@@ -869,7 +751,7 @@
           </div>
 
           <!-- Levels -->
-          <div class="dark:border-jacarta-600 border-jacarta-100 relative border-b py-6">
+          <!-- <div class="dark:border-jacarta-600 border-jacarta-100 relative border-b py-6">
             <div class="flex items-center justify-between">
               <div class="flex">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
@@ -894,10 +776,10 @@
                 </svg>
               </button>
             </div>
-          </div>
+          </div> -->
 
           <!-- Stats -->
-          <div class="dark:border-jacarta-600 border-jacarta-100 relative border-b py-6">
+          <!-- <div class="dark:border-jacarta-600 border-jacarta-100 relative border-b py-6">
             <div class="flex items-center justify-between">
               <div class="flex">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
@@ -921,7 +803,7 @@
                 </svg>
               </button>
             </div>
-          </div>
+          </div> -->
 
           <!-- Unlockable Content -->
           <div class="dark:border-jacarta-600 border-jacarta-100 relative border-b py-6">
@@ -941,7 +823,7 @@
                   </p>
                 </div>
               </div>
-              <input type="checkbox" value="checkbox" name="check"
+              <input id="unlockable-content" type="checkbox" value="checkbox" name="check"
                 class="checked:bg-accent checked:focus:bg-accent checked:hover:bg-accent after:bg-jacarta-400 bg-jacarta-100 relative h-6 w-[2.625rem] cursor-pointer appearance-none rounded-full border-none after:absolute after:top-[0.1875rem] after:left-[0.1875rem] after:h-[1.125rem] after:w-[1.125rem] after:rounded-full after:transition-all checked:bg-none checked:after:left-[1.3125rem] checked:after:bg-white focus:ring-transparent focus:ring-offset-0" />
             </div>
           </div>
@@ -974,13 +856,13 @@
                   </p>
                 </div>
               </div>
-              <input type="checkbox" value="checkbox" name="check"
+              <input id="sensitive-content" type="checkbox" value="checkbox" name="check"
                 class="checked:bg-accent checked:focus:bg-accent checked:hover:bg-accent after:bg-jacarta-400 bg-jacarta-100 relative h-6 w-[2.625rem] cursor-pointer appearance-none rounded-full border-none after:absolute after:top-[0.1875rem] after:left-[0.1875rem] after:h-[1.125rem] after:w-[1.125rem] after:rounded-full after:transition-all checked:bg-none checked:after:left-[1.3125rem] checked:after:bg-white focus:ring-transparent focus:ring-offset-0" />
             </div>
           </div>
 
           <!-- Supply -->
-          <div class="mb-6">
+          <!-- <div class="mb-6">
             <label for="item-supply" class="font-display text-jacarta-700 mb-2 block dark:text-white">Supply</label>
 
             <div class="mb-3 flex items-center space-x-2">
@@ -1002,6 +884,141 @@
             <input type="text" id="item-supply"
               class="dark:bg-jacarta-700 border-jacarta-100 hover:ring-accent/10 focus:ring-accent dark:border-jacarta-600 dark:placeholder:text-jacarta-300 w-full rounded-lg py-3 hover:ring-2 dark:text-white"
               placeholder="1" />
+          </div> -->
+
+          <!-- Collection -->
+          <div class="relative">
+            <div>
+              <label class="font-display text-jacarta-700 mb-2 block dark:text-white">License</label>
+              <div class="mb-3 flex items-center space-x-2">
+                <p class="dark:text-jacarta-300 text-2xs">
+                  This is the license for your work.
+                  <span class="inline-block"
+                    data-tippy-content="This license will decide the terms and conditions for your property worldwide.">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                      class="dark:fill-jacarta-300 fill-jacarta-500 ml-1 -mb-[3px] h-4 w-4">
+                      <path fill="none" d="M0 0h24v24H0z"></path>
+                      <path
+                        d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16zM11 7h2v2h-2V7zm0 4h2v6h-2v-6z">
+                      </path>
+                    </svg>
+                  </span>
+                </p>
+              </div>
+            </div>
+
+            <div class="dropdown my-1 cursor-pointer">
+              <div
+                class="dark:bg-jacarta-700 dropdown-toggle border-jacarta-100 dark:border-jacarta-600 dark:text-jacarta-300 flex items-center justify-between rounded-lg border bg-white py-3 px-3"
+                role="button" id="item-collection" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="">Select license</span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                  class="fill-jacarta-500 h-4 w-4 dark:fill-white">
+                  <path fill="none" d="M0 0h24v24H0z" />
+                  <path d="M12 13.172l4.95-4.95 1.414 1.414L12 16 5.636 9.636 7.05 8.222z" />
+                </svg>
+              </div>
+
+              <div
+                class="dropdown-menu dark:bg-jacarta-800 z-10 hidden w-full whitespace-nowrap rounded-xl bg-white py-4 px-2 text-left shadow-xl"
+                aria-labelledby="item-collection">
+                <ul class="scrollbar-custom flex max-h-48 flex-col overflow-y-auto">
+                  <li>
+                    <button id="btn-nd" type="button"
+                      class="dropdown-item font-display dark:hover:bg-jacarta-600 hover:bg-jacarta-50 flex w-full items-center justify-between rounded-xl px-5 py-2 text-left text-sm transition-colors dark:text-white">
+                      <span class="flex items-center space-x-3">
+                        <img src="img/license_img/nd.png" class="h-8 w-8 rounded-full" loading="lazy"
+                          alt="avatar" />
+                        <span class="text-jacarta-700 dark:text-white">All Rights Reserved (No derivatives or adaptations of your work are permitted.)</span>
+                      </span>
+                      
+                    </button>
+                  </li>
+                  <li>
+                    <button id="btn-nc" type="button"
+                      class="dropdown-item font-display dark:hover:bg-jacarta-600 hover:bg-jacarta-50 flex w-full items-center justify-between rounded-xl px-5 py-2 text-left text-sm transition-colors dark:text-white">
+                      <span class="flex items-center space-x-3">
+                        <img src="img/license_img/nc.png" class="h-8 w-8 rounded-full" loading="lazy"
+                          alt="avatar" />
+                        <span class="text-jacarta-700 dark:text-white">Some Rights Reserved (Only noncommercial use of your work is permitted.)</span>
+                      </span>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                        class="fill-accent mb-[3px] h-4 w-4">
+                        <path fill="none" d="M0 0h24v24H0z"></path>
+                        <path d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"></path>
+                      </svg>
+                    </button>
+                  </li>
+                  <li>
+                    <button id="btn-by" type="button"
+                      class="dropdown-item font-display dark:hover:bg-jacarta-600 hover:bg-jacarta-50 flex w-full items-center justify-between rounded-xl px-5 py-2 text-left text-sm transition-colors dark:text-white">
+                      <span class="flex items-center space-x-3">
+                        <img src="img/license_img/by.png" class="h-8 w-8 rounded-full" loading="lazy"
+                          alt="avatar" />
+                        <span class="text-jacarta-700 dark:text-white">All Rights Relinquished (Credit must be given to you, the creator.)</span>
+                      </span>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Confirm Authority -->
+          <div class="dark:border-jacarta-600 border-jacarta-100 relative border-b py-6">
+            <div class="flex items-center justify-between">
+              <div class="flex">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                  class="fill-accent mr-2 mt-px h-4 w-4 shrink-0">
+                  <path fill="none" d="M0 0h24v24H0z" />
+                  <path
+                    d="M7 10h13a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V11a1 1 0 0 1 1-1h1V9a7 7 0 0 1 13.262-3.131l-1.789.894A5 5 0 0 0 7 9v1zm-2 2v8h14v-8H5zm5 3h4v2h-4v-2z" />
+                </svg>
+
+                <div>
+                  <label class="font-display text-jacarta-700 block dark:text-white">Confirm License</label>
+                  <p class="dark:text-jacarta-300">
+                    I confirm I own or have authority to license the work.
+                  </p>
+                </div>
+              </div>
+              <input id="confirm-authority" type="checkbox" value="checkbox" name="check"
+                class="checked:bg-accent checked:focus:bg-accent checked:hover:bg-accent after:bg-jacarta-400 bg-jacarta-100 relative h-6 w-[2.625rem] cursor-pointer appearance-none rounded-full border-none after:absolute after:top-[0.1875rem] after:left-[0.1875rem] after:h-[1.125rem] after:w-[1.125rem] after:rounded-full after:transition-all checked:bg-none checked:after:left-[1.3125rem] checked:after:bg-white focus:ring-transparent focus:ring-offset-0" />
+            </div>
+          </div>
+
+          <!-- Terms and conditions -->
+          <div class="dark:border-jacarta-600 border-jacarta-100 relative mb-6 border-b py-6">
+            <div class="flex items-center justify-between">
+              <div class="flex">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                  class="fill-accent mr-2 mt-px h-4 w-4 shrink-0">
+                  <path fill="none" d="M0 0h24v24H0z" />
+                  <path
+                    d="M7 10h13a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V11a1 1 0 0 1 1-1h1V9a7 7 0 0 1 13.262-3.131l-1.789.894A5 5 0 0 0 7 9v1zm-2 2v8h14v-8H5zm5 3h4v2h-4v-2z" />
+                </svg>
+
+                <div>
+                  <label class="font-display text-jacarta-700 dark:text-white">Terms and conditions</label>
+
+                  <p class="dark:text-jacarta-300">
+                    I have read and understand the terms of the license.
+                    <a href="http://www.google.com"><span class="inline-block"
+                      data-tippy-content="Link to terms and conditions">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                        class="dark:fill-jacarta-300 fill-jacarta-500 ml-2 -mb-[2px] h-4 w-4">
+                        <path fill="none" d="M0 0h24v24H0z"></path>
+                        <path
+                          d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16zM11 7h2v2h-2V7zm0 4h2v6h-2v-6z">
+                        </path>
+                      </svg>
+                    </span></a>
+                  </p>
+                </div>
+              </div>
+              <input id="terms-conditions" type="checkbox" value="checkbox" name="check"
+                class="checked:bg-accent checked:focus:bg-accent checked:hover:bg-accent after:bg-jacarta-400 bg-jacarta-100 relative h-6 w-[2.625rem] cursor-pointer appearance-none rounded-full border-none after:absolute after:top-[0.1875rem] after:left-[0.1875rem] after:h-[1.125rem] after:w-[1.125rem] after:rounded-full after:transition-all checked:bg-none checked:after:left-[1.3125rem] checked:after:bg-white focus:ring-transparent focus:ring-offset-0" />
+            </div>
           </div>
 
           <!-- Blockchain -->
@@ -1053,7 +1070,7 @@
           </div>
 
           <!-- Freeze metadata -->
-          <div class="mb-6">
+          <!-- <div class="mb-6">
             <div class="mb-2 flex items-center space-x-2">
               <label for="item-freeze-metadata" class="font-display text-jacarta-700 block dark:text-white">Freeze
                 metadata</label>
@@ -1077,7 +1094,7 @@
             <input type="text" disabled id="item-freeze-metadata"
               class="dark:bg-jacarta-700 bg-jacarta-50 border-jacarta-100 dark:border-jacarta-600 dark:placeholder:text-jacarta-300 w-full rounded-lg py-3 dark:text-white"
               placeholder="To freeze your metadata, you must create your item first." />
-          </div>
+          </div> -->
 
           <!-- Submit -->
           <button id="btn-upload"
@@ -1176,7 +1193,7 @@
     <div class="modal-dialog max-w-2xl">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="addPropertiesLabel">Add properties</h5>
+          <h5 class="modal-title" id="addPropertiesLabel">Add credits</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
               class="fill-jacarta-700 h-6 w-6 dark:fill-white">
@@ -1190,8 +1207,7 @@
         <!-- Body -->
         <div class="modal-body p-6">
           <p class="dark:text-jacarta-300 mb-8">
-            Item Properties show up underneath your item, are clickable, and can be filtered in your collection's
-            sidebar.
+            These are the citations of other intellectual property used in the production of this work.
           </p>
 
           <div class="relative my-3 flex items-center">
@@ -1211,15 +1227,16 @@
                 class="font-display text-jacarta-700 mb-3 block text-base font-semibold dark:text-white">Type</label>
               <input type="text"
                 class="dark:bg-jacarta-700 dark:border-jacarta-600 focus:ring-accent border-jacarta-100 dark:placeholder-jacarta-300 h-12 w-full border border-r-0 focus:ring-inset dark:text-white"
-                placeholder="Character" />
+                placeholder="Usage" />
             </div>
 
             <div class="flex-1">
               <label
-                class="font-display text-jacarta-700 mb-3 block text-base font-semibold dark:text-white">Name</label>
+                class="font-display text-jacarta-700 mb-3 block text-base font-semibold dark:text-white">Certificate
+                ID</label>
               <input type="text"
                 class="dark:bg-jacarta-700 dark:border-jacarta-600 focus:ring-accent border-jacarta-100 dark:placeholder-jacarta-300 h-12 w-full rounded-r-lg border focus:ring-inset dark:text-white"
-                placeholder="Male" />
+                placeholder="URIP ID" />
             </div>
           </div>
 
